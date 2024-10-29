@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.switch-field {
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+	color: red;
+}
+
+.switch-field input:checked+label {
+	background-color: #506db4;
+	box-shadow: none;
+	color: white;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+.form {
+	background-color: #f3f3f3ae;
+	width: 30vw;
+	box-shadow: 30px rgba(255, 255, 255, 0.4);
+	padding-bottom: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 4px;
+	font-weight: normal;
+	line-height: 1.625;
+	margin: 8px auto;
+	padding: 16px;
+	z-index: 2;
+
+}
+
+form input {
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.area {
+	font-family: 'Courier New', Courier, monospace;
+	outline: 0;
+	background: #f2f2f2;
+	width: 76%;
+	border: 0;
+	margin: 0 0 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 15px;
+	height: 35px;
+	border-radius: 5px;
+}
+
+.location {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 76%;
+	border: 0;
+	margin: 0 0 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 15px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.submit {
+	background: #506db4;
+	width: 40%;
+	color: white;
+	border: 0;
+	margin: 25px 0 10px;
+	box-sizing: border-box;
+	font-size: 15px;
+	height: 35px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.submit:hover {
+	opacity: 1;
+	background: #344779;
+	transform: scale(1.05);
+}
+
+.result {
+	background: #ffffff;
+	width: 76%;
+	margin: 25px 0 10px;
+	box-sizing: border-box;
+	font-size: 15px;
+	height: 35px;
+	border-radius: 7px;
+	text-align: center;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.result>h2 {
+	font-weight: 50;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: rgb(59, 59, 59);
+	font-size: 15px;
+	padding: 2px;
+}
+
+.img {
+	background: url('https://static.vecteezy.com/system/resources/previews/006/420/126/non_2x/illustration-of-cityscape-with-linear-line-style-suitable-for-design-element-of-real-estate-poster-modern-city-promotional-background-and-urban-landscape-illustration-free-vector.jpg');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-size: 100% 100%;
+
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+body,
+html {
+	padding: 20px;
+	height: 100vh;
+}
+
+.content {
+	display: flex;
+	width: 100%;
+	margin-left: -55px;
+	justify-content: center;
+	align-items: center;
+}
